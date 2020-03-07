@@ -79,7 +79,7 @@ export let foo = function() {
 
 **NOTE** A negative side-effect. While debugging, Chrome won't be able to get the value of an exported variable,
 because the source map will reference `exports.something`, while you still hover `something`.
-Tracked in https://github.com/tobiipro/babel-preset-firecloud/issues/2 .
+Tracked in https://github.com/rokmoln/babel-preset-firecloud/issues/2 .
 
 To disable in `.babelrc.js`:
 
@@ -165,5 +165,5 @@ module.exports = {
 [UNLICENSE](UNLICENSE)
 
 
-  [1]: https://travis-ci.com/tobiipro/babel-preset-firecloud
-  [2]: https://travis-ci.com/tobiipro/babel-preset-firecloud.svg?branch=master
+  [1]: https://travis-ci.com/rokmoln/babel-preset-firecloud
+  [2]: https://travis-ci.com/rokmoln/babel-preset-firecloud.svg?branch=master
