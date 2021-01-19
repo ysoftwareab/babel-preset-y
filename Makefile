@@ -6,6 +6,7 @@ endif
 endif
 
 include support-firecloud/build.mk/generic.common.mk
+include support-firecloud/build.mk/sh.check.shellcheck.mk
 include support-firecloud/build.mk/node.common.mk
 include support-firecloud/build.mk/js.check.eslint.mk
 include support-firecloud/build.mk/js.test.jest.mk
