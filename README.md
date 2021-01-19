@@ -165,5 +165,5 @@ module.exports = {
 [UNLICENSE](UNLICENSE)
 
 
-  [1]: https://travis-ci.com/rokmoln/babel-preset-firecloud
-  [2]: https://travis-ci.com/rokmoln/babel-preset-firecloud.svg?branch=master
+  [1]: https://github.com/rokmoln/babel-preset-firecloud/actions?query=workflow%3ACI+branch%3Amaster
+  [2]: https://github.com/rokmoln/babel-preset-firecloud/workflows/CI/badge.svg?branch=master

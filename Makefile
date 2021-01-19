@@ -13,3 +13,6 @@ include support-firecloud/repo/mk/core.misc.release.npg.mk
 # ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
+
+.github/workflows/main.yml: .github/workflows/main.yml.tpl .github/workflows.src/main.yml support-firecloud/package.json
+	$(call sf-generate-from-template)
