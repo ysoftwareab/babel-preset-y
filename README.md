@@ -50,36 +50,7 @@ Included presets/plugins can be
 
 ### `babel-plugin-firecloud-export-all` (default: enabled)
 
-Makes all top-level module definitions exported (adding `export` keyword to declaration).
-
-Additionally all references to these variables will be replaced with `exports.<reference>`.
-This is a closer behaviour to ES6 export bindings,
-where changing the exported value outside of the module would make the change reflect inside the module.
-See http://2ality.com/2015/07/es6-module-exports.html .
-
-In:
-
-```js
-let _a = 5;
-
-let foo = function() {
-  return _a;
-}
-```
-
-Out:
-
-```js
-export let _a = 5;
-
-export let foo = function() {
-  return exports._a;
-}
-```
-
-**NOTE** A negative side-effect. While debugging, Chrome won't be able to get the value of an exported variable,
-because the source map will reference `exports.something`, while you still hover `something`.
-Tracked in https://github.com/rokmoln/babel-preset-firecloud/issues/2 .
+[README.babel-plugin-firecloud-export-all.md](./README.babel-plugin-firecloud-export-all.md)
 
 To disable in `.babelrc.js`:
 
@@ -97,37 +68,7 @@ module.exports = {
 
 ### `babel-plugin-firecloud-src-arg` (default: config-needed)
 
-Adds an extra argument with info about location (file/line/column) to calls of a function e.g. logger.
-
-To configure in `.babelrc.js`:
-
-```js
-// provide a static list of function calls to amend with src information
-let srcFuns = [
-  'console.log',
-  'console.error'
-];
-
-// or provide a dynamic list
-let srcFuns = function() {
-  return [
-    'log',
-    'error'
-  ].map(function(consoleFun) {
-    return `console.${consoleFun}`;
-  });
-}
-
-module.exports = {
-  presets: [
-    ['firecloud', {
-      'babel-plugin-firecloud-src-arg': {
-        srcFuns
-      }
-    }]
-  ]
-};
-```
+[README.babel-plugin-firecloud-src-arg.md](./README.babel-plugin-firecloud-src-arg.md)
 
 To disable in `.babelrc.js`:
 
@@ -142,7 +83,6 @@ module.exports = {
   ]
 };
 ```
-
 
 ## Notable plugins (not included)
 
