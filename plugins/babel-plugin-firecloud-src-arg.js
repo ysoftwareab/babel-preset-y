@@ -65,9 +65,9 @@ module.exports = function() {
         //   line: ...,
         //   column: ...
         // }}
-        // eslint-disable-next-line camelcase
+        // eslint-disable-next-line babel/camelcase
         let typeOf__filename = t.unaryExpression('typeof', t.identifier('__filename'));
-        // eslint-disable-next-line camelcase
+        // eslint-disable-next-line babel/camelcase
         let istypeOf__filenameUndefined = t.binaryExpression(
           '===',
           typeOf__filename,
