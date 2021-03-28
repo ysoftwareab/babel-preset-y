@@ -2,7 +2,7 @@ module.exports = {
   root: true,
 
   extends: [
-    'firecloud/node'
+    'plugin:firecloud/node'
   ],
 
   rules: {
