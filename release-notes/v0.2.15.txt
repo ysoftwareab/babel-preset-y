@@ -1,0 +1,32 @@
+babel-preset-firecloud v0.2.15 Release Notes
+
+Highlights since v0.2.14-src:
+
+* None
+
+Breaking commits since v0.2.14-src:
+
+* None
+
+Commits since v0.2.14-src:
+
+* eb7816c 2021-03-29 updated support-firecloud to v0.2.131
+* 0492e8b 2021-03-29 bump eslint-plugin-firecloud
+* 23fe9e8 2021-03-19 updated support-firecloud to v0.2.130
+* 1174863 2021-01-27 fix camelcase warning when linting
+* ccd0d08 2021-01-27 upgrade eslint-config-firecloud@0.12
+* b5d31ac 2021-01-24 sync npm-install-peer-dependencies with eslint-config-firecloud
+* 3249943 2021-01-23 split README
+* 73b7bbe 2021-01-23 updated support-firecloud to v0.2.128
+* 1097480 2021-01-23 mark .github/workflows/main.yml as deps
+* 039737b 2021-01-20 updated support-firecloud to v0.2.123
+* 842ead3 2021-01-19 shellcheck fixes
+* 712d1fb 2021-01-19 fixup! updated support-firecloud to v0.2.120
+* 2b42ce1 2021-01-19 fixup! updated support-firecloud to v0.2.120
+* 110a433 2021-01-19 fixup! updated support-firecloud to v0.2.120
+* ee53f6f 2021-01-19 updated support-firecloud to v0.2.120
+* 1a23b0c 2020-10-07 remove eclint; deprecated in favor of editorconfig-checker (system dep)
+* e474095 2020-03-07 updated support-firecloud to v0.2.29
+* 51cc07c 2020-03-07 updated support-firecloud to 0.2.28
+* c888f42 2020-03-07 use rokmoln's support-firecloud
+o f3d0b8e 2020-03-07 0.2.14
