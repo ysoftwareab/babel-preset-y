@@ -1,13 +1,13 @@
-# babel-preset-firecloud [![Build Status][2]][1]
+# babel-preset-y [![Build Status][2]][1]
 
-The Babel preset used within Tobii Cloud Services.
+The Babel preset used within Y Software AB.
 
 In your project's `.babelrc.js`
 
 ```js
 module.exports = {
   presets: [
-    ['firecloud', {
+    ['y', {
       // debug: false,
       // loose: false,
       // spec: false,
@@ -18,7 +18,7 @@ module.exports = {
 };
 ```
 
-Optionally, you can run `node_modules/babel-preset-firecloud/npm-install-peer-dependencies`
+Optionally, you can run `node_modules/babel-preset-y/npm-install-peer-dependencies`
 in order to install the required peer dependencies.
 
 **NOTE** If you're using an earlier version than Babel 7.0, you can upgrade your `.babelrc` to be dynamic
@@ -46,19 +46,19 @@ Included presets/plugins can be
 - disabled by sending `{"disabled": true}` as `options`
 
 
-## Firecloud plugins
+## Y plugins
 
-### `babel-plugin-firecloud-export-all` (default: enabled)
+### `babel-plugin-y-export-all` (default: enabled)
 
-[README.babel-plugin-firecloud-export-all.md](./README.babel-plugin-firecloud-export-all.md)
+[README.babel-plugin-y-export-all.md](./README.babel-plugin-y-export-all.md)
 
 To disable in `.babelrc.js`:
 
 ```js
 module.exports = {
   presets: [
-    ['firecloud', {
-      'babel-plugin-firecloud-export-all': {
+    ['y', {
+      'babel-plugin-y-export-all': {
         disabled: true
       }
     }]
@@ -66,17 +66,17 @@ module.exports = {
 };
 ```
 
-### `babel-plugin-firecloud-src-arg` (default: config-needed)
+### `babel-plugin-y-src-arg` (default: config-needed)
 
-[README.babel-plugin-firecloud-src-arg.md](./README.babel-plugin-firecloud-src-arg.md)
+[README.babel-plugin-y-src-arg.md](./README.babel-plugin-y-src-arg.md)
 
 To disable in `.babelrc.js`:
 
 ```js
 module.exports = {
   presets: [
-    ['firecloud', {
-      'babel-plugin-firecloud-src-arg': {
+    ['y', {
+      'babel-plugin-y-src-arg': {
         disabled: true
       }
     }]
@@ -105,5 +105,5 @@ module.exports = {
 [UNLICENSE](UNLICENSE)
 
 
-  [1]: https://github.com/rokmoln/babel-preset-firecloud/actions?query=workflow%3ACI+branch%3Amaster
-  [2]: https://github.com/rokmoln/babel-preset-firecloud/workflows/CI/badge.svg?branch=master
+  [1]: https://github.com/ysoftwareab/babel-preset-y/actions?query=workflow%3ACI+branch%3Amaster
+  [2]: https://github.com/ysoftwareab/babel-preset-y/workflows/CI/badge.svg?branch=master

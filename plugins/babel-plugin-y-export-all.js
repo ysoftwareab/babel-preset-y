@@ -92,7 +92,7 @@ module.exports = function() {
   };
 
   return {
-    name: 'firecloud-export-all',
+    name: 'y-export-all',
     visitor: {
       Program: function(path, _state) {
         let variableDeclaratorBindings = _.filter(path.scope.bindings, function(binding) {

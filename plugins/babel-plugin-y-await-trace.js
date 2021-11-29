@@ -6,7 +6,7 @@ module.exports = function() {
 
 
   return {
-    name: 'firecloud-await-trace',
+    name: 'y-await-trace',
     pre() {
       this.visited = new Map();
     },

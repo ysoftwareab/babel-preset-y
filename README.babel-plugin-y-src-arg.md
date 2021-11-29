@@ -1,4 +1,4 @@
-# `babel-plugin-firecloud-src-arg`
+# `babel-plugin-y-src-arg`
 
 Adds an extra argument with info about location (file/line/column) to calls of a function e.g. logger.
 
@@ -23,8 +23,8 @@ let srcFuns = function() {
 
 module.exports = {
   presets: [
-    ['firecloud', {
-      'babel-plugin-firecloud-src-arg': {
+    ['y', {
+      'babel-plugin-y-src-arg': {
         srcFuns
       }
     }]

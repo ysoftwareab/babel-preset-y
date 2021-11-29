@@ -1,4 +1,4 @@
-# `babel-plugin-firecloud-export-all` (default: enabled)
+# `babel-plugin-y-export-all` (default: enabled)
 
 Makes all top-level module definitions exported (adding `export` keyword to declaration).
 
@@ -29,15 +29,15 @@ export let foo = function() {
 
 **NOTE** A negative side-effect. While debugging, Chrome won't be able to get the value of an exported variable,
 because the source map will reference `exports.something`, while you still hover `something`.
-Tracked in https://github.com/rokmoln/babel-preset-firecloud/issues/2 .
+Tracked in https://github.com/ysoftwareab/babel-preset-y/issues/2 .
 
 To disable in `.babelrc.js`:
 
 ```js
 module.exports = {
   presets: [
-    ['firecloud', {
-      'babel-plugin-firecloud-export-all': {
+    ['y', {
+      'babel-plugin-y-export-all': {
         disabled: true
       }
     }]

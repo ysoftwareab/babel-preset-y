@@ -17,7 +17,7 @@ let debug = function(options) {
 
   hasBeenLogged = true;
   // eslint-disable-next-line no-console
-  console.log('babel-preset-firecloud: `DEBUG` option');
+  console.log('babel-preset-y: `DEBUG` option');
   // eslint-disable-next-line no-console
   console.log(JSON.stringify({
     options
@@ -39,10 +39,10 @@ let plugins = {
   'babel-plugin-preval': undefined
 };
 
-let firecloudPlugins = {
-  'babel-plugin-firecloud-await-trace': undefined,
-  'babel-plugin-firecloud-export-all': undefined,
-  'babel-plugin-firecloud-src-arg': undefined
+let yPlugins = {
+  'babel-plugin-y-await-trace': undefined,
+  'babel-plugin-y-export-all': undefined,
+  'babel-plugin-y-src-arg': undefined
 };
 
 presets = _.mapValues(presets, function(preset, name) {
@@ -61,12 +61,12 @@ plugins = _.mapValues(plugins, function(plugin, name) {
   return plugin;
 });
 
-firecloudPlugins = _.mapValues(firecloudPlugins, function(plugin, key) {
+yPlugins = _.mapValues(yPlugins, function(plugin, key) {
   plugin = require(`./plugins/${key}`);
   return plugin;
 });
 
-_.merge(plugins, firecloudPlugins);
+_.merge(plugins, yPlugins);
 
 module.exports = function(context, options) {
   options = _.defaults(options || {}, {
@@ -102,7 +102,7 @@ module.exports = function(context, options) {
       method: 'coroutine'
     },
 
-    'babel-plugin-firecloud-src-arg': {
+    'babel-plugin-y-src-arg': {
       disabled: true
     }
   });
@@ -137,7 +137,7 @@ module.exports = function(context, options) {
     }
 
     let knownPP = _.concat(_.keys(presets), _.keys(plugins));
-    throw new Error(`Preset/plugin ${name} is unknown to babel-preset-firecloud. I know of ${_.join(knownPP, ',')}.`);
+    throw new Error(`Preset/plugin ${name} is unknown to babel-preset-y. I know of ${_.join(knownPP, ',')}.`);
   });
 
   debug(options);

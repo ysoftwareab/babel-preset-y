@@ -1,6 +1,6 @@
 let _ = require('lodash');
 let pluginTester = require('babel-plugin-tester');
-let plugin = require('../plugins/babel-plugin-firecloud-await-trace');
+let plugin = require('../plugins/babel-plugin-y-await-trace');
 
 pluginTester({
   plugin,
