@@ -2,7 +2,7 @@
   "private": true,
   "name": "babel-preset-y",
   "description": "The Babel preset used within Y Software AB.",
-  "version": "0.2.15",
+  "version": "0.3.0-rc.0",
   "license": "Unlicense",
   "files": [
     "/BUILD",
